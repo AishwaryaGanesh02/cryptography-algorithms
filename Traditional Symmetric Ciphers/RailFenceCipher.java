@@ -26,7 +26,7 @@ public class RailFenceCipher {
 
     private static String encrypt(String plaintext, int key) {
         String ciphertext = "";
-        int row = 0, column = 0, k = 0;
+        int row = 0, column = 0;
         int totalCoulmns = (int) Math.ceil(plaintext.length() / (float) (key - 1));
         char plaintextmatrix[][] = new char[key][totalCoulmns];
         boolean dir = false;
